@@ -3048,7 +3048,7 @@ body.menu-open .page-content-wrapper::before {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: var(--font-display);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-main);
     letter-spacing: 1px;
@@ -4030,4 +4030,16 @@ body.menu-open .page-content-wrapper::before {
     z-index: 0;
     /* Ensure it isn't hidden by overflow if user scrolled */
     display: block;
+}
+
+/* Mobile adjustments for Product Section */
+@media (max-width: 600px) {
+    .spine-title {
+        font-size: 0.95rem;
+    }
+
+    .acc-spine {
+        padding: 0 16px;
+        /* Reduce padding slightly */
+    }
 }
