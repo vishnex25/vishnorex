@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Vishnorex Technologies | Enterprise Software & Digital Intelligence Solutions</title>
+    <meta name="description"
+        content="Vishnorex Technologies Pvt. Ltd. delivers next-gen digital intelligence solutions including automation, cloud, AI, analytics, and enterprise software to scale modern businesses.">
+    <meta name="keywords"
+        content="Vishnorex Technologies, Enterprise Software, Digital Intelligence, Library Management Software, Construction Management App, HR Management System, Billing Software, Custom Software Development, Bangalore, India">
+    <meta name="author" content="Vishnorex Technologies Pvt. Ltd.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://vishnorex.com" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vishnorex.com">
+    <meta property="og:title" content="Vishnorex Technologies | Enterprise Software & Digital Intelligence">
+    <meta property="og:description"
+        content="Architecting the digital future with precision. delivering enterprise-grade software solutions aimed at scaling your ambition.">
+    <meta property="og:image" content="https://vishnorex.com/assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vishnorex.com/">
+    <meta property="twitter:title" content="Vishnorex Technologies | Enterprise Software & Digital Intelligence">
+    <meta property="twitter:description"
+        content="Architecting the digital future with precision. We deliver enterprise-grade software solutions.">
+    <meta property="twitter:image" content="https://vishnorex.com/assets/logo.png">
+
+    <!-- Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vishnorex Technologies Pvt. Ltd.",
+      "url": "https://vishnorex.com",
+      "logo": "https://vishnorex.com/assets/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8807181522",
+        "contactType": "customer service",
+        "email": "vishnorextech@gmail.com",
+        "areaServed": "IN",
+        "availableLanguage": "en"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/109535710",
+        "https://www.instagram.com/vishnorexzone/"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Liblio",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "description": "Automated cataloging and smart member tracking for modern educational institutions."
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/weblogo.png">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+
+
+    <!-- Sidebar / Drawer Menu -->
+    <aside class="drawer-sidebar">
+        <div class="drawer-header centered-header">
+            <!-- Mobile Menu Logo -->
+            <img src="assets/mobile-menu.png" alt="Vishnorex Logo" class="drawer-logo">
+            <!-- Replaced Profile with Company Name -->
+            <h3 class="sidebar-brand-text">Vishnorex Technologies<br>Private Limited</h3>
+        </div>
+        <ul class="drawer-menu">
+            <li class="active"><a href="#home"><span class="icon">🏠</span> Home</a></li>
+            <li><a href="#about"><span class="icon">ℹ️</span> About Us</a></li>
+            <li><a href="#services"><span class="icon">🛠️</span> Capabilities</a></li>
+            <li><a href="#products"><span class="icon">📦</span> Products</a></li>
+            <!-- <li><a href="#careers"><span class="icon">🚀</span> Careers</a></li> -->
+            <li><a href="#contact"><span class="icon">📞</span> Contact</a></li>
+        </ul>
+        <!-- Footer removed -->
+    </aside>
+
+    <!-- Main Content Wrapper (The Card) -->
+    <div class="page-content-wrapper" id="page-wrapper">
+
+        <!-- Background Gradients (Moved inside to be part of the card) -->
+        <!-- Background Gradients & Animation -->
+        <div class="animated-bg-container" id="animated-bg">
+            <div class="grid-pattern"></div>
+            <!-- Beams will be injected here by JS -->
+            <div class="bg-glow"></div>
+        </div>
+
+        <nav class="floating-nav">
+            <div class="nav-content">
+                <a href="#" class="brand">
+                    <img src="assets/logo.png" alt="Vishnorex" class="nav-logo">
+                </a>
+                <!-- Desktop Nav Links (Hidden on Mobile) -->
+                <ul class="nav-links desktop-only">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <!-- <li><a href="#careers">Careers</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#contact" class="btn-glow">Let's Talk</a>
+            </div>
+        </nav>
+
+        <main>
+            <section id="home" class="hero-section">
+                <canvas id="hero-canvas"></canvas>
+                <div class="hero-bg-mesh"></div>
+                <img src="assets/center-logo.jpg" alt="Vishnorex Center Logo" class="hero-center-logo">
+                <div class="container hero-split">
+                    <div class="hero-text-wrapper left-align">
+                        <span class="company-name-kicker">Vishnorex Technologies Pvt. Ltd.</span>
+                        <h1 class="hero-title">
+                            Next-Gen <br>
+                            <span class="text-gradient">Digital Intelligence.</span>
+                        </h1>
+                        <p class="hero-sub">
+                            We don't just write code; we architect the future. Vishnorex delivers enterprise-grade
+                            software
+                            solutions that scale with your ambition.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn-primary">
+                                <span>Start Project</span>
+                                <div class="liquid"></div>
+                            </a>
+                            <a href="#products" class="btn-outline">
+                                View Work
+                            </a>
+                        </div>
+                        <div class="hero-trust">
+                            <span>Trusted by leaders in</span>
+                            <div class="trust-icons">
+                                <span>Construction</span> • <span>Education</span> • <span>Logistics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-deck-wrapper">
+                        <div class="product-deck">
+                            <!-- Card 1 -->
+                            <div class="hero-card active" style="--i:0">
+                                <img src="assets/Products-logo/liblio png.png" alt="Liblio Logo" class="card-icon-img">
+                                <h3>Liblio</h3>
+                                <span>Library Management</span><br>
+                                <p>Automated cataloging and smart member tracking for modern educational institutions.
+                                </p>
+                                <div class="card-meta">
+                                    <span>Cloud-Native</span> • <span>Fast Search</span>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="hero-card" style="--i:1">
+                                <div class="card-icon">📞</div>
+                                <h3>Telecalling</h3>
+                                <p>Intelligent lead tracking and automated call logging to boost sales team
+                                    productivity.
+                                </p>
+                                <div class="card-meta">
+                                    <span>VoIP Ready</span> • <span>Analytics</span>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="hero-card" style="--i:2">
+                                <div class="card-icon">🏗️</div>
+                                <h3>Construction Management</h3>
+                                <p>End-to-end project resource planning, blueprint sharing, and timeline optimization.
+                                </p>
+                                <div class="card-meta">
+                                    <span>Real-time</span> • <span>Resource Alloc</span>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="hero-card" style="--i:3">
+                                <div class="card-icon">👥</div>
+                                <h3>HR Management</h3>
+                                <p>Seamless employee records, automated payroll integration, and performance review
+                                    cycles.
+                                </p>
+                                <div class="card-meta">
+                                    <span>Payroll</span> • <span>Compliance</span>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="hero-card" style="--i:4">
+                                <div class="card-icon">🧾</div>
+                                <h3>Billing Software</h3>
+                                <p>Smart invoicing, automated tax calculations, and integrated global payment gateways.
+                                </p>
+                                <div class="card-meta">
+                                    <span>GST/VAT</span> • <span>Multi-currency</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deck-instruction">
+                            <span class="mouse-icon">🖱️</span> Click to navigate
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infinite Marquee (Moved to bottom of hero relative parent) -->
+                <div class="marquee-wrapper">
+                    <div class="marquee-track">
+                        <span>Cloud & DevOps</span> • <span>Cybersecurity</span> • <span>AI & Machine Learning</span> •
+                        <span>Custom Software</span> • <span>Data & Analytics</span> •
+                        <span>Cloud & DevOps</span> • <span>Cybersecurity</span> • <span>AI & Machine Learning</span> •
+                        <span>Custom Software</span> • <span>Data & Analytics</span> •
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <!-- About Section Redesigned -->
+            <!-- About Section Redesigned (Replica) -->
+            <section id="about" class="about-replica-section">
+                <div class="container mobile-reverse-grid">
+                    <!-- Left: Visual Collage -->
+                    <div class="about-visuals-wrapper">
+                        <div class="visual-grid">
+                            <!-- Floating Stat Card (Top) -->
+                            <div class="stat-card-float gsap-fade-right">
+                                <div class="stat-header">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-trend">↗</span>
+                                </div>
+                                <p class="stat-desc">Enterprise projects delivered with 98% client retention rate.</p>
+                                <div class="avatar-group">
+                                    <div class="avatar"
+                                        style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64');">
+                                    </div>
+                                    <div class="avatar"
+                                        style="background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64');">
+                                    </div>
+                                    <div class="avatar"
+                                        style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=64&h=64');">
+                                    </div>
+                                    <div class="avatar count">+7</div>
+                                </div>
+                            </div>
+
+                            <!-- Main Image (Developer) -->
+                            <div class="product-box-large gsap-scale-up">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                                    alt="Developer working on code" class="img-cover">
+                            </div>
+
+                            <!-- Secondary Image (Code/Tech) -->
+                            <div class="product-bottle-tall gsap-scale-up delay-1">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                                    alt="Coding screen" class="img-cover">
+                            </div>
+
+                            <!-- Rating Widget (Bottom) -->
+                            <div class="rating-widget-float gsap-fade-up">
+                                <span class="rating-label">Best ratings</span>
+                                <div class="rating-stars">
+                                    <span>😎</span><span>😐</span><span>🙂</span><span>🤩</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="about-content-wrapper">
+                        <div class="content-inner">
+                            <span class="tiny-label gsap-text-reveal">A BIT</span>
+                            <h2 class="about-title gsap-text-reveal">ABOUT US</h2>
+                            <p class="about-desc gsap-text-reveal">
+                                Vishnorex was founded on a simple principle: technology should be a catalyst for growth,
+                                not a constraint. We are a collective of expert engineers, visionary strategists, and
+                                creative problem-solvers dedicated to co-creating success with our clients. Our culture
+                                is built on a foundation of deep collaboration, radical transparency, and an relentless
+                                pursuit of excellence.
+                            </p>
+                            <a href="#products" class="btn-explore gsap-btn-reveal">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="bento-section">
+                <div class="container">
+                    <div class="section-head">
+                        <div class="badge-pill">Core Capabilities</div>
+                        <h2>Core Features That Set Us Apart</h2>
+                        <p>Explore our standout services designed to deliver exceptional performance and value,
+                            distinguishing us from the competition.</p>
+                    </div>
+
+                    <div class="services-layout-3col">
+                        <!-- Left Column -->
+                        <div class="services-col left-col">
+                            <!-- Cloud -->
+                            <div class="service-card-compact">
+                                <div class="card-glow"></div>
+                                <div class="icon-3d">☁️</div>
+                                <div class="card-content">
+                                    <h3>Cloud & DevOps</h3>
+                                    <p>Architecting scalable platforms with automated CI/CD.</p>
+                                </div>
+                            </div>
+                            <!-- Cybersecurity -->
+                            <div class="service-card-compact">
+                                <div class="card-glow"></div>
+                                <div class="icon-3d">🛡️</div>
+                                <div class="card-content">
+                                    <h3>Cybersecurity</h3>
+                                    <p>Zero Trust implementation & continuous monitoring.</p>
+                                </div>
+                            </div>
+                            <!-- Custom Software -->
+                            <div class="service-card-compact">
+                                <div class="card-glow"></div>
+                                <div class="icon-3d">💻</div>
+                                <div class="card-content">
+                                    <h3>Custom Software</h3>
+                                    <p>High-performance platforms aligned to your core workflows.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Image -->
+                        <div class="center-image-wrapper">
+                            <img src="assets/services-center.png" alt="Professional engineer working on computer">
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="services-col right-col">
+                            <!-- AI & ML -->
+                            <div class="service-card-compact">
+                                <div class="card-glow"></div>
+                                <div class="icon-3d">🧠</div>
+                                <div class="card-content">
+                                    <h3>AI & Machine Learning</h3>
+                                    <p>Production GenAI solutions that automate decisions.</p>
+                                </div>
+                            </div>
+                            <!-- Data & Analytics -->
+                            <div class="service-card-compact">
+                                <div class="card-glow"></div>
+                                <div class="icon-3d">📊</div>
+                                <div class="card-content">
+                                    <h3>Data & Analytics</h3>
+                                    <p>Turning siloed data into clear decision dashboards.</p>
+                                </div>
+                            </div>
+                            <!-- Internships -->
+                            <div class="service-card-compact">
+                                <div class="card-glow"></div>
+                                <div class="icon-3d">🎓</div>
+                                <div class="card-content">
+                                    <h3>Student Internships</h3>
+                                    <p>Empowering students with real-world experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="bg-watermark">SUPPORT</div>
+                <div class="container grid-3">
+                    <div class="stat-item">
+                        <span class="number" data-target="98">0</span><span class="symbol">%</span>
+                        <span class="label">Client Retention</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number" data-target="10">0</span><span class="symbol">+</span>
+                        <span class="label">Enterprise Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number" data-target="24">0</span><span class="symbol">/7</span>
+                        <span class="label">Support Coverage</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-separator-line"></div>
+
+            <!-- Redesigned Product Section "Brainstorm" -->
+            <section id="products" class="product-redesign-section">
+                <!-- Brainstorm Animation Canvas -->
+                <!-- Canvas removed for clean white background -->
+
+                <div class="product-header-float">
+                    <div class="badge-pill">Our Products</div>
+                    <h2>Proprietary Platforms</h2>
+                    <p>We deliver measurable results. Explore how we've helped industry leaders overcome their toughest
+                        technology challenges.</p>
+                </div>
+
+                <div class="product-accordion-wrapper">
+                    <!-- Product 1: Liblio -->
+                    <div class="accordion-item active" onclick="activateAccordion(this)">
+                        <div class="acc-spine">
+                            <span class="spine-num">01</span>
+                            <span class="spine-title">Liblio</span>
+                            <span class="spine-icon">📚</span>
+                        </div>
+                        <div class="acc-panel">
+                            <span class="panel-icon-large">📚</span>
+                            <h3 class="panel-title">Liblio</h3>
+                            <p class="panel-desc">Automated cataloging and smart member tracking for modern educational
+                                institutions. Transform your library into a digital knowledge hub.</p>
+                            <div class="panel-meta">
+                                <span class="meta-tag">Cloud-Native</span>
+                                <span class="meta-tag">Fast Search</span>
+                            </div>
+                            <a href="#" class="panel-btn">View Details <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Telecalling -->
+                    <div class="accordion-item" onclick="activateAccordion(this)">
+                        <div class="acc-spine">
+                            <span class="spine-num">02</span>
+                            <span class="spine-title">Telecalling</span>
+                            <span class="spine-icon">📞</span>
+                        </div>
+                        <div class="acc-panel">
+                            <span class="panel-icon-large">📞</span>
+                            <h3 class="panel-title">Telecalling</h3>
+                            <p class="panel-desc">Intelligent lead tracking and automated call logging to boost sales
+                                team productivity. Never miss a potential client again.</p>
+                            <div class="panel-meta">
+                                <span class="meta-tag">VoIP Ready</span>
+                                <span class="meta-tag">Analytics</span>
+                            </div>
+                            <a href="#" class="panel-btn">View Details <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Construction Management -->
+                    <div class="accordion-item" onclick="activateAccordion(this)">
+                        <div class="acc-spine">
+                            <span class="spine-num">03</span>
+                            <span class="spine-title">Construction Management</span>
+                            <span class="spine-icon">🏗️</span>
+                        </div>
+                        <div class="acc-panel">
+                            <span class="panel-icon-large">🏗️</span>
+                            <h3 class="panel-title">Construction Management</h3>
+                            <p class="panel-desc">End-to-end project resource planning, blueprint sharing, and timeline
+                                optimization. Build smarter, effectively.</p>
+                            <div class="panel-meta">
+                                <span class="meta-tag">Real-time</span>
+                                <span class="meta-tag">Resource Alloc</span>
+                            </div>
+                            <a href="#" class="panel-btn">View Details <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: HR Management -->
+                    <div class="accordion-item" onclick="activateAccordion(this)">
+                        <div class="acc-spine">
+                            <span class="spine-num">04</span>
+                            <span class="spine-title">HR Management</span>
+                            <span class="spine-icon">👥</span>
+                        </div>
+                        <div class="acc-panel">
+                            <span class="panel-icon-large">👥</span>
+                            <h3 class="panel-title">HR Management</h3>
+                            <p class="panel-desc">Seamless employee records, automated payroll integration, and
+                                performance review cycles. Empower your workforce.</p>
+                            <div class="panel-meta">
+                                <span class="meta-tag">Payroll</span>
+                                <span class="meta-tag">Compliance</span>
+                            </div>
+                            <a href="#" class="panel-btn">View Details <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Billing Software -->
+                    <div class="accordion-item" onclick="activateAccordion(this)">
+                        <div class="acc-spine">
+                            <span class="spine-num">05</span>
+                            <span class="spine-title">Billing Software</span>
+                            <span class="spine-icon">🧾</span>
+                        </div>
+                        <div class="acc-panel">
+                            <span class="panel-icon-large">🧾</span>
+                            <h3 class="panel-title">Billing Software</h3>
+                            <p class="panel-desc">Smart invoicing, automated tax calculations, and integrated global
+                                payment gateways. Get paid faster and securely.</p>
+                            <div class="panel-meta">
+                                <span class="meta-tag">GST/VAT</span>
+                                <span class="meta-tag">Multi-currency</span>
+                            </div>
+                            <a href="#" class="panel-btn">View Details <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Contact Section -->
+            <!-- Contact Section Redesigned: The Interactive Manifesto -->
+            <section id="contact" class="contact-manifesto-section">
+                <div class="manifesto-background">
+                    <div class="dot-grid"></div>
+                </div>
+
+                <div class="container relative">
+                    <div class="manifesto-grid">
+                        <!-- Left: The Pitch -->
+                        <div class="manifesto-left">
+                            <div class="status-badge">
+                                <span class="status-dot"></span> Open for Innovation
+                            </div>
+                            <h2 class="manifesto-title">
+                                Have a vision?<br>
+                                <span class="highlight-text">Let's blueprint it.</span>
+                            </h2>
+                            <p class="manifesto-desc">
+                                We prefer partners, not just clients. Tell us about your ambition, and we'll engineer
+                                the path to get there.
+                            </p>
+
+                            <div class="connect-lines">
+                                <div class="connect-item">
+                                    <span class="c-icon">📧</span>
+                                    <div class="c-info">
+                                        <span class="label">Direct Line</span>
+                                        <a href="mailto:vishnorextech@gmail.com"
+                                            class="value">vishnorextech@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="connect-item">
+                                    <span class="c-icon">📍</span>
+                                    <div class="c-info">
+                                        <span class="label">HQ</span>
+                                        <span class="value">Bangalore, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: The Spec Sheet -->
+                        <div class="manifesto-right">
+                            <div class="spec-sheet-card">
+                                <div class="sheet-header">
+                                    <span class="sheet-title">PROJECT_SPECIFICATION_V1.0</span>
+                                    <div class="sheet-controls">
+                                        <span class="control-dot red"></span>
+                                        <span class="control-dot yellow"></span>
+                                        <span class="control-dot green"></span>
+                                    </div>
+                                </div>
+
+                                <form class="spec-form" action="https://formspree.io/f/xeobrkjj" method="POST">
+                                    <!-- Interactive "Mad Libs" / Natural Language Form or Clean Tech Form?
+                                         Let's go with "Clean Tech" for maximum professional usability but high style. -->
+
+                                    <div class="form-group">
+                                        <label>Initiator Name</label>
+                                        <input type="text" name="name" required>
+                                        <div class="focus-line"></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Work Email</label>
+                                        <input type="email" name="email" required>
+                                        <div class="focus-line"></div>
+                                    </div>
+
+                                    <div class="form-group full">
+                                        <label>Interest Area</label>
+                                        <div class="pill-group">
+                                            <label class="pill-radio">
+                                                <input type="radio" name="interest" value="custom_sw">
+                                                <span>Custom Software</span>
+                                            </label>
+                                            <label class="pill-radio">
+                                                <input type="radio" name="interest" value="cloud">
+                                                <span>Cloud/DevOps</span>
+                                            </label>
+                                            <label class="pill-radio">
+                                                <input type="radio" name="interest" value="ai">
+                                                <span>AI & ML</span>
+                                            </label>
+                                            <label class="pill-radio">
+                                                <input type="radio" name="interest" value="other">
+                                                <span>Other</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group full">
+                                        <label>Project Brief</label>
+                                        <textarea name="message"
+                                            placeholder="Describe your objectives, timeline, and requirements..."
+                                            rows="3"></textarea>
+                                        <div class="focus-line"></div>
+                                    </div>
+
+                                    <button type="submit" class="btn-launch">
+                                        <span>Initialize Project</span>
+                                        <span class="icon-arrow">→</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Redesigned CTA - The Kinetic White Space -->
+            <section class="cta-banner-redesign">
+                <div class="cta-canvas-bg">
+                    <div class="blob-gradient"></div>
+                </div>
+                <div class="container relative">
+                    <div class="cta-layout">
+                        <div class="cta-visual-text">
+                            <span class="cta-eyebrow">◆ SYSTEM READY</span>
+                            <h2 class="cta-liquid-title" data-text="Ready to Evolve?">
+                                Ready to Evolve?
+                            </h2>
+                            <p class="cta-minimal-desc">
+                                Stop iterating. Start standardizing excellence.
+                            </p>
+                        </div>
+                        <div class="cta-action-zone">
+                            <a href="#contact" class="magnetic-cta-btn">
+                                <span class="btn-layer-text">Book Brainstorm</span>
+                                <span class="btn-layer-bg"></span>
+                            </a>
+                            <span class="cta-helper-text">Free 30-min architectural review</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-redesign">
+            <!-- Curve/Shape divider -->
+            <div class="footer-curve"></div>
+
+            <!-- Watermark -->
+            <div class="footer-watermark">VISHNOREX</div>
+
+            <div class="container relative z-10">
+                <div class="footer-main-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-brand-col">
+                        <img src="assets/logo-footer.png" alt="Vishnorex" class="footer-logo">
+                        <p class="footer-tagline">
+                            Architecting the digital future with precision, intelligence, and unwavering excellence.
+                        </p>
+                        <div class="social-links-glass">
+                            <a href="https://www.linkedin.com/company/109535710/admin/dashboard/" target="_blank"
+                                class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/vishnorexzone/" target="_blank" class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/8807181522" target="_blank" class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Links Columns -->
+                    <div class="footer-nav-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Capabilities</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-col">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#products">Liblio</a></li>
+                            <li><a href="#products">Telecalling</a></li>
+                            <li><a href="#products">Construction Management</a></li>
+                            <li><a href="#products">HR Management</a></li>
+                            <li><a href="#products">Billing Software</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter / Contact Column -->
+                    <div class="footer-contact-col">
+                        <h4>Stay Ahead</h4>
+                        <form class="footer-newsletter">
+                            <div class="input-glass-wrapper">
+                                <input type="email" placeholder="Enter your email" required>
+                                <button type="submit">→</button>
+                            </div>
+                        </form>
+                        <div class="contact-details-mini">
+                            <span>Bangalore, India</span>
+                            <span>vishnorextech@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-bar">
+                    <div class="legal-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    <span>&copy; 2025 Vishnorex Technologies Pvt. Ltd.</span>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- End Page Wrapper -->
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Telecalling",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+         "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "description": "Intelligent lead tracking and automated call logging to boost sales team productivity."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Construction Management",
+        "applicationCategory": "ProjectManagementApplication",
+        "operatingSystem": "Web",
+         "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "description": "End-to-end project resource planning, blueprint sharing, and timeline optimization."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "HR Management",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+         "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "description": "Seamless employee records, automated payroll integration, and performance review cycles."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Billing Software",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+         "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "description": "Smart invoicing, automated tax calculations, and integrated global payment gateways."
+      }
+    ]
+    </script>
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

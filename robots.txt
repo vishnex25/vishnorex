@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://demovishnorex.netlify.app/sitemap.xml

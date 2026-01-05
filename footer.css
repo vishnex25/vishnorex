@@ -1,0 +1,217 @@
+/* -------------------------------------------------------------------------- */
+/*  REDESIGNED PROFESSIONAL FOOTER */
+/* -------------------------------------------------------------------------- */
+
+.footer-redesign {
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 180px 0 60px 0;
+    overflow: hidden;
+    /* Diagonal Slope "Curve" - Downwards */
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    margin-top: -100px;
+}
+
+/* Specific override for the watermark to be BLUE as requested */
+.footer-redesign .footer-watermark {
+    color: rgba(37, 99, 235, 0.2) !important;
+    /* Blue tint */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    font-size: 15vw;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    display: block;
+    z-index: 0;
+    pointer-events: none;
+    font-family: var(--font-display);
+    letter-spacing: -10px;
+}
+
+.footer-main-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Brand Column */
+.footer-brand-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-logo {
+    width: 180px;
+    /* Maintain aspect ratio */
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.footer-tagline {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 300px;
+}
+
+/* Social Links */
+.social-links-glass {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.footer-nav-col h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.footer-nav-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-nav-col a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.footer-nav-col a:hover {
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.input-glass-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 6px;
+    backdrop-filter: blur(10px);
+}
+
+.input-glass-wrapper input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    width: 100%;
+    outline: none;
+}
+
+.input-glass-wrapper button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details-mini {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-bar {
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .footer-redesign {
+        padding-top: 120px;
+        clip-path: polygon(0 80px, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .footer-main-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-brand-col,
+    .footer-contact-col {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand-col {
+        align-items: center;
+    }
+
+    .social-links-glass {
+        justify-content: center;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-redesign .footer-watermark {
+        font-size: 25vw;
+        top: 40%;
+        bottom: auto;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-5deg);
+        opacity: 0.15;
+        color: rgba(37, 99, 235, 0.2) !important;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .footer-contact-col h4 {
+        margin-bottom: 32px;
+        /* Increased spacing */
+    }
+}
