@@ -4042,6 +4042,7 @@ body.menu-open .page-content-wrapper::before {
         padding: 0 16px;
         /* Reduce padding slightly */
     }
+<<<<<<< HEAD
 }
 
 /* Student Internship Section */
@@ -4116,4 +4117,6 @@ body.menu-open .page-content-wrapper::before {
     100% {
         box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
     }
+=======
+>>>>>>> c8513525299902a49fcc20b7a0c57fb814de60a2
 }

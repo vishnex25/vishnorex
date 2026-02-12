@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+<<<<<<< HEAD
 Sitemap: https://vishnorex.com/sitemap.xml
+=======
+Sitemap: https://demovishnorex.netlify.app/sitemap.xml
+>>>>>>> c8513525299902a49fcc20b7a0c57fb814de60a2
